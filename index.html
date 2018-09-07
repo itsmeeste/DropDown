@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src = "main.js"></script>
+    </head>
+
+    <body>
+
+        <div class = "container" onmouseover="dropDownOver('dropdown',2,this)" onmouseleave="dropDownExit('dropdown',2,this)">
+        <span id = "dropdown" style="position:absolute;top:10;left:10" onmouseover="changeColour(this)" onmouseout ="changeColourBack(this)">SomeText</span>
+        
+        <div class = "container" onmouseover="dropDownOver('dropdownSub',3,this)"onmouseleave = "dropDownExit('dropdownSub',3,this)">
+        <span id = "dropdown1" style="position:absolute;top:30;left:10;display:none" onmouseover="changeColour(this)"  onmouseout ="changeColourBack(this)">SomeText</span>
+            <span id = "dropdownSub1" style="position:absolute;top:30;left:80;display:none" onmouseover="changeColour(this)"  onmouseout ="changeColourBack(this)">SomeText</span>
+            <span id = "dropdownSub2" style="position:absolute;top:50;left:80;display:none" onmouseover="changeColour(this)" onmouseout ="changeColourBack(this)">SomeText</span>
+            <span id = "dropdownSub3" style="position:absolute;top:70;left:80;display:none" onmouseover="changeColour(this)" onmouseout ="changeColourBack(this)">SomeText</span>
+        </div>
+        <span id = "dropdown2" style="position:absolute;top:50;left:10;display:none" onmouseover="changeColour(this)"  onmouseout ="changeColourBack(this)">SomeText</span>
+        </div>
+    </body>
+</html>
